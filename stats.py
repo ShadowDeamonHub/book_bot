@@ -14,6 +14,6 @@ def get_character_count(book_text):
     for character in lowercase_charater:
         if character in character_count:
             character_count[character] += 1
-    else:
-        character_count[character] = 1
-    return len(character_count)
+        else:
+            character_count[character] = 1
+    return dict(character_count)
