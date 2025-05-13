@@ -7,7 +7,7 @@ def word_count(book_text):
     #counts the word in the book
     word_count = book_text.split()
     return len(word_count)
-def get_caracter_count(book_text):
+def get_character_count(book_text):
     #counts the character in the book
     lowercase_charater = book_text.lower()
     character_count = {}
