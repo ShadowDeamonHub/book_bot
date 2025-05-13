@@ -3,6 +3,10 @@ def get_book_text(filepath):
         # f is a file object
         file_contents = f.read()
     return file_contents
+def Word_count(book_text):
+    #counts the word in the book
+    word_count = book_text.split()
+    return len(word_count)
 def main():
 
     book_text = get_book_text("/home/patri/Boot_Dev_clourses/book_bot/books/frankenstein.txt")
