@@ -3,10 +3,10 @@ def main():
     from stats import get_book_text, word_count, get_character_count, sorting 
     #checks for sys.argv to have two arguments
     if len(sys.argv) != 2:
-        pirnt("Usage: python3 main.py <path_to_book>")
+        print("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
     
-    book_text = get_book_text(sys.argv)
+    book_text = get_book_text(sys.argv[1])
     num_words = word_count(book_text)
     num_characters =get_character_count(book_text)
     num_characters.sort(reverse=True, key=sorting)
