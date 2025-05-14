@@ -20,7 +20,5 @@ def get_character_count(book_text):
 
 def dict_sorted(character_count, book_text):
     sort_key = list(set(book_text))
-    ussorted_character_count = list(character_count)
-    character_sorted = ussorted_character_count.sort(reverse= True, key = sort_key)
-    return character_sorted
-     
+    return character_count[sort_key]
+ 
