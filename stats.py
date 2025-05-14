@@ -3,18 +3,26 @@ def get_book_text(filepath):
         # f is a file object
         file_contents = f.read()
     return file_contents
-def word_count(book_text):
+def word_count(words):
     #counts the word in the book
-    word_count = book_text.split()
+    word_count = words.split()
     return len(word_count)
-def get_character_count(book_text):
+def get_character_count(characters):
     #counts the character in the book
-    lowercase_charater = book_text.lower()
+    lowercase_charater = characters.lower()
     character_count = {}
     for character in lowercase_charater:
         if character in character_count:
             character_count[character] += 1
         else:
             character_count[character] = 1
-    return dict(character_count)
+    char_list = []
+    for char, num in character_count.items():
+        char_list.append({"char": char, "num": num})
+    return char_list
 
+
+
+
+#def sorting(character_count):
+ #   return character_count[???]
