@@ -18,6 +18,3 @@ def get_character_count(book_text):
             character_count[character] = 1
     return dict(character_count)
 
-def dict_sorted(character_count):
-    return character_count[int()]
- 
