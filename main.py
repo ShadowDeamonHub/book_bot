@@ -2,7 +2,7 @@ def main():
     import sys
     from stats import get_book_text, word_count, get_character_count, sorting 
     #checks for sys.argv to have two arguments
-    if sys.argv[1] == None:
+    if len(sys.argv) != 2:
         pirnt("Usage: python3 main.py <path_to_book>")
         sys.exit(1)
     
