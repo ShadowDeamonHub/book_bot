@@ -21,8 +21,5 @@ def get_character_count(characters):
         char_list.append({"char": char, "num": num})
     return char_list
 
-
-
-
-#def sorting(character_count):
- #   return character_count[???]
+def sorting(character_count):
+    return character_count["num"]
