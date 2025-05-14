@@ -3,17 +3,13 @@ def main():
     book_text = get_book_text("/home/patri/Boot_Dev_clourses/book_bot/books/frankenstein.txt")
     num_words = word_count(book_text)
     num_characters =get_character_count(book_text)
-    character_count = dict_sorted(num_characters)
-    unsorted_characters = dict_sorted(character_count)
-    unsorted_characters.sort(reversed=True, key = dict_sorted)
+    character_count = dict_sorted(num_characters, book_text
     print("============ BOOKBOT ============")
     print(f"Analyzing book found a books/frankenstein.txt...")
     print("----------- Word Count ----------")
     print(f"{num_words} words found in the document")
     print("----------- Character Count -----------")
     print(character_count)
-    print(unsorted_characters)
-
 
 
 
